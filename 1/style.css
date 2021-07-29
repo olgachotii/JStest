@@ -1,0 +1,78 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 400px;
+  height: 540px;
+  border: 1px solid black;
+}
+
+.side {
+  display: flex;
+
+  width: 80px;
+  height: 80px;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.round {
+  width: 5px;
+  height: 5px;
+  border: 7px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.one {
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  align-self: center;
+}
+
+.six,
+.four,
+.two,
+.three {
+  justify-content: space-around;
+}
+
+.two .round:nth-child(2),
+.three .round:nth-child(3) {
+  align-self: flex-end;
+}
+
+.three .round:nth-child(2) {
+  align-self: center;
+}
+
+.five {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.five-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.six-wrap,
+.four-wrap,
+.two-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
